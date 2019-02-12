@@ -37,8 +37,6 @@ print(y)
 
 # Use a list comprehension to create a list containing only the _even_ elements
 # the user entered into list x.
-for item in range(0, 10, 2):
-    print(item)
 
 x = input("Enter comma-separated numbers: ").split(',')
 
