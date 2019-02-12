@@ -22,3 +22,7 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+day = calendar.TextCalendar(4)
+print(day)
+
