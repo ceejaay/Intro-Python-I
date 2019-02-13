@@ -18,8 +18,14 @@ class Waypoint(LatLon):
         super().__init__(lat, lon)
         self.name = name
 
-    def __str__(self):
-        return self.__str__()
+    # def __str__(self):
+    #     ...
+
+
+
+    # def __repr__(self):
+    #     return self.__str__()
+
 
 # x = Waypoint('home', 100, 82)
 # print(x.name)

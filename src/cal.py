@@ -17,12 +17,32 @@ and does the following:
  - Otherwise, print a usage statement to the terminal indicating
    the format that your program expects arguments to be given.
    Then exit the program.
+
 """
+
 
 import sys
 import calendar
 from datetime import datetime
 
-day = calendar.TextCalendar(4)
-print(day)
+cal = calendar.yeardayscalendar(2019)
+print(cal)
 
+arg_length = len(sys.argv)
+if arg_length == 1:
+    print('the current month')
+elif arg_length == 2:
+    year = sys.argv[1]
+    print('the selected month')
+elif arg_length == 3:
+    month = sys.argv[1]
+    year = sys.argv[2]
+    print('the selected month and year')
+
+
+
+
+
+# day = calendar.TextCalendar(4)
+# year = day.formatmonth(2011, 3, 3)
+# print(year)
