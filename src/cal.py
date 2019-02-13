@@ -25,24 +25,33 @@ import sys
 import calendar
 from datetime import datetime
 
-cal = calendar.yeardayscalendar(2019)
-print(cal)
+# cal = calendar.Calendar
+
+# print(cal.yeardatescalendar(2019, 6))
+cal = calendar.TextCalendar(4)
+# print(cal.formatmonth(2011, 3, 3))
+
+# Ok, so we need to convert the text to an integer. There may be a thing in python date/time that will do that.
+
+# def text_to_int(argument):
+#     for item in argument:
+#         if
+
+
 
 arg_length = len(sys.argv)
 if arg_length == 1:
-    print('the current month')
+    print(cal.formatmonth(2019, 2, 3))
 elif arg_length == 2:
     year = sys.argv[1]
-    print('the selected month')
+    print(cal.formatmonth(year, 2, 3))
 elif arg_length == 3:
     month = sys.argv[1]
     year = sys.argv[2]
-    print('the selected month and year')
+    print(year, month, 3)
 
 
 
 
 
-# day = calendar.TextCalendar(4)
 # year = day.formatmonth(2011, 3, 3)
-# print(year)
